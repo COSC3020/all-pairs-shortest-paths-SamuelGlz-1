@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/2i4vCRmk)
 # All Pairs Shortest Paths
 
 In the lectures, we've seen Dijkstra's algorithm for finding the shortest paths
@@ -28,3 +29,7 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
 answer, including your reasoning, to this markdown file.
+
+The worst case time complexity for my implementation would be $\Theta(|V|^3)$
+
+This is because I have a triple nested for loop, and each for loop will loop |V| times. A fuller time complexity woudl be $\Theta(|V^2|+|V^3|)$ because of the initialization of the distance matrix.
